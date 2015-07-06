@@ -1,10 +1,10 @@
 rabbitmq:
-  image: dockerfile/rabbitmq
+  image: library/rabbitmq
   ports:
     - "5672:5672"
     - "15672:15672"
 mongodb:
-  image: dockerfile/mongodb
+  image: library/mongo
   ports:
     - "27017:27017"
   command: mongod --smallfiles
